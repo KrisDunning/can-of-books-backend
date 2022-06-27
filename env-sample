@@ -1,0 +1,2 @@
+PORT={YOUR backend server address}
+MONGORURL={YOUR mongo atlas DB access path}
