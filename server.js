@@ -9,7 +9,7 @@ app.use(cors());
 const PORT = process.env.PORT || 3001;
 const mongoose= require('mongoose');
 // connect Mongoose to our MongoDB
-mongoose.connect(process.env.MONGOURL);
+mongoose.connect(process.env.MONGO_URL);
 // add validation to confirm we are wired up to our mongo DB
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
