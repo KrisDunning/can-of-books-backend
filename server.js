@@ -8,6 +8,10 @@ app.use(cors());
 // const axios=require('axios');
 const PORT = process.env.PORT || 3001;
 const mongoose= require('mongoose');
+const Book=require('./models/book.js');
+
+
+
 // connect Mongoose to our MongoDB
 mongoose.connect(process.env.MONGO_URL);
 // add validation to confirm we are wired up to our mongo DB
@@ -20,6 +24,20 @@ db.once('open', function () {
 app.get('/', (request,response)=>{
   response.status(200).send('Connected to Heroku Can of Books Home Page');
 });
+
+app.get('/books', getBooks);
+
+
+async function getBooks(request,response){
+
+  try {
+    let results= await Book.find();
+    response.status(200).send(results);
+  } catch (error) {
+    response.status(error.status).send(error.message);
+  }
+
+};
 
 app.get('/test', (request, response) => {
   
