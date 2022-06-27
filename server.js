@@ -5,7 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
-const axios=require('axios');
+// const axios=require('axios');
 const PORT = process.env.PORT || 3001;
 const mongoose= require('mongoose');
 // connect Mongoose to our MongoDB
