@@ -5,10 +5,12 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
+const axios=require('axios');
 const PORT = process.env.PORT || 3001;
 const mongoose= require('mongoose');
 // connect Mongoose to our MongoDB
 mongoose.connect(process.env.MONGOURL);
+// add validation to confirm we are wired up to our mongo DB
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
@@ -17,7 +19,7 @@ db.once('open', function () {
 
 app.get('/', (request,response)=>{
   response.status(200).send('Connected to Heroku Can of Books Home Page');
-};
+});
 
 app.get('/test', (request, response) => {
   
@@ -30,7 +32,6 @@ app.get('*'),(request,response)=>{
 };
 
 
-// add validation to confirm we are wired up to our mongo DB
 
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
