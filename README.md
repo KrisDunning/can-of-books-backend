@@ -39,18 +39,94 @@ Actual time needed to complete: __40 min___
 
 -----
 
-Name of feature: ________________________________
+Name of feature:___Add mongoose to server and test mongo access____
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: __1 hr___
 
-Start time: _____
+Start time: __2:10 PM___
 
-Finish time: _____
+Finish time: __3:23 PM___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __1 hour 13 min___
+
+-----
+
+Name of feature:___Seeded Books and test backend route____
+
+Estimate of time needed to complete: __1 hr___
+
+Start time: __3:25 PM___
+
+Finish time: __4:15 PM___
+
+Actual time needed to complete: __50 min___
+
+-----
+
+Name of feature:___Front end best books and carousel____
+
+Estimate of time needed to complete: __1.5 hr___
+
+Start time: __4:30 PM___
+
+Finish time: __6:05 PM___
+
+Actual time needed to complete: __1 hr 35min___
 
 -----
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 Project Partner: Dennis DeVries
+
+### Logistical
+
+- What hours will you be available to communicate?
+
+> Standard Code Fellows Hours
+
+- What platform will you use to communicate (ie. Slack, phone …)?
+
+> slack
+
+- How often will you take breaks?
+
+> Every two hours, up to 15 min
+
+- What is your plan if you start to fall behind?
+
+> Call TA.
+
+### Cooperative
+
+- Make a list of each person’s strengths.
+
+> Dennis: organization, timeliness, algorithms
+> Kris: google, javascript, flexibility
+
+- How can you best utilize these strengths in the development of your application?
+
+> Pair programming.
+
+- In what areas do you each want to develop greater strength?
+
+> Dennis: javascript,css,react
+> Kris: get better at bootstrap, mongoDB
+
+- Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development?
+
+> I am primarily responsible for backend code, and will pair with Dennis for code updates/reviews.
+
+### Conflict Resolution
+
+- What will your team do if one person is pulling all the weight while the other person is not contributing?
+
+> Start with conversation, elevate as necessary.
+
+- What will your team do if one person is taking over the project and not letting the other member contribute?
+
+> Start with conversation, elevate as necessary.
+
+- How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level?
+
+> 1 mulligan use for a responsibility swap. Also standups to kepp everyone informed.
