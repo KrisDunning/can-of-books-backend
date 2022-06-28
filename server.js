@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 app.use(cors());
+app.use(express.json());
 // const axios=require('axios');
 const PORT = process.env.PORT || 3001;
 const mongoose= require('mongoose');
@@ -26,7 +27,7 @@ app.get('/', (request,response)=>{
 });
 
 app.get('/books', getBooks);
-
+app.post('/books',postBooks);
 
 async function getBooks(request,response){
 
@@ -37,6 +38,23 @@ async function getBooks(request,response){
     response.status(error.status).send(error.message);
   }
 
+};
+
+async function postBooks(request,response){
+
+    try{
+      console.log(request.body);
+      let createdBook= await Book.create({
+        title:request.body.title,
+        description:request.body.description,
+        status:request.body.status,
+      });
+      console.log('Book created: ',createdBook.title);
+      response.status(200).send(createdBook);
+    }catch(error){
+      console.log(error);
+      response.status(500).send('Book creation failed. Try Again.');
+    }
 };
 
 app.get('/test', (request, response) => {
