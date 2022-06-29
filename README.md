@@ -75,6 +75,44 @@ Actual time needed to complete: __1 hr 35min___
 
 -----
 
+Name of feature:___REST POST call to /books____
+
+Estimate of time needed to complete: __30 min___
+
+Start time: __1:50 PM___
+
+Finish time: __2:26 PM___
+
+Actual time needed to complete: __36 min___
+
+-----
+
+Name of feature:___Add book button and modal/form component and test____
+
+Estimate of time needed to complete: __2 hr___
+
+Start time: __2:34 PM___
+
+Finish time: __4:30 PM___
+
+Actual time needed to complete: __1 hr 56 min___
+
+-----
+
+Name of feature:___Add delete button and test functinoality____
+
+Estimate of time needed to complete: __2 hr___
+
+Start time: __4:30 PM___
+
+Finish time: __6:50 PM___
+
+Actual time needed to complete: __2 hr 20 min___
+
+-----
+
+
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 Project Partner: Dennis DeVries
