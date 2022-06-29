@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 // const axios=require('axios');
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 const mongoose= require('mongoose');
 const Book=require('./models/book.js');
 
@@ -28,6 +28,7 @@ app.get('/', (request,response)=>{
 
 app.get('/books', getBooks);
 app.post('/books',postBooks);
+app.delete('/books/:id',deleteBooks);
 
 async function getBooks(request,response){
 
@@ -49,12 +50,23 @@ async function postBooks(request,response){
         description:request.body.description,
         status:request.body.status,
       });
-      console.log('Book created: ',createdBook.title);
+      console.log('Book created: ',createdBook);
       response.status(200).send(createdBook);
     }catch(error){
       console.log(error);
       response.status(500).send('Book creation failed. Try Again.');
     }
+};
+
+async function deleteBooks(request,response){
+  let id=request.params.id;
+  console.log('ID to delete', id);
+  try {
+    await Book.findByIdAndDelete(id);
+    response.status(200).send('Book Deletion Successful');
+  } catch (error) {
+    response.status(500).send(error.message);
+  }
 };
 
 app.get('/test', (request, response) => {
