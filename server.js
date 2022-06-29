@@ -71,7 +71,7 @@ async function deleteBooks(request,response){
 };
 
 async function putBooks(request,response){
-  let id=requst.params.id
+  let id=request.params.id
   try {
     let newBookData=request.body;
     let updatedBook= await Book.findByIdAndUpdate(id , newBookData, {new:true, overwrite:true});
